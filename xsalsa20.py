@@ -16,19 +16,23 @@ worksheet.set_column('B:B', 20) # make column B wider
 worksheet.write(0, 0, "Distancia de Hamming") # title of column A
 worksheet.write(0, 1, "Efecto Avalancha") # title of column B
 
-plaintext = "L" # message to encode, will be random
-for i in range(0,999):
-	# plaintext.append(binascii.b2a_hex(urandom(16))) # insert randomly generated plaintext (in hexadecimal)
-	# cipher_1 = (AES.new(orig_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex") ) # encrypt the plaintext with the key
-	cipher_1 = XSalsa20_xor(plaintext[i], IV, KEY_1)
-	length = (len(cipher_1)) # returns the length of the cipher
-	# cipher_2 = (AES.new(modified_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex")) # encrypt the plaintext with the modified key
-	cipher_2 = XSalsa20_xor(plaintext[i], IV, KEY_2)
-
-	distancia = (distance.hamming(cipher_1, cipher_2)) # calculate Hamming's distance
-	aval_effect = float(distancia) / length # calculate the avalance effect
-	worksheet.write(i+1, 0, distancia) # add the result of the distance to the excel sheet
-	worksheet.write(i+1, 1, aval_effect) # add the result of the avalanche effect to the excel sheet
+# plaintext = b'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' # message to encode, will be random
+plaintext = []
+for i in range(0,10000):
+  plaintext.append(binascii.b2a_hex(urandom(16))) # insert randomly generated plaintext (in hexadecimal)
+  # cipher_1 = (AES.new(orig_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex") ) # encrypt the plaintext with the key
+  cipher_1 = XSalsa20_xor(plaintext[i].encode("hex"), IV, KEY_1)
+  length = (len(cipher_1)) # returns the length of the cipher
+  # cipher_2 = (AES.new(modified_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex")) # encrypt the plaintext with the modified key
+  cipher_2 = XSalsa20_xor(plaintext[i].encode("hex"), IV, KEY_2)
+  hamming = distance.hamming(cipher_1, cipher_2)
+  # print(hamming) # calculate Hamming's distance
+  aval_effect = float(hamming)/length
+  # print(aval_effect) # calculate the avalanche effect
+    # print(dist)
+    # print(aval_effect)
+  worksheet.write(i+1, 0, hamming) # add the result of the distance to the excel sheet
+  worksheet.write(i+1, 1, aval_effect) # add the result of the avalanche effect to the excel sheet
 
 workbook.close() # close excel file
 
@@ -64,17 +68,17 @@ workbook.close() # close excel file
 #
 # plaintext = [] # create an array
 # for i in range(0,1000):
-# 	plaintext.append(binascii.b2a_hex(urandom(16))) # insert randomly generated plaintext (in hexadecimal)
-# 	# cipher_1 = (AES.new(orig_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex") ) # encrypt the plaintext with the key
-# 	cipher_1 = XSalsa20_xor(plaintext[i].encode("hex"), IV, KEY_1)
-# 	length = (len(cipher_1)) # returns the length of the cipher
-# 	# cipher_2 = (AES.new(modified_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex")) # encrypt the plaintext with the modified key
-# 	cipher_2 = XSalsa20_xor(plaintext[i].encode("hex"), IV, KEY_2)
+#   plaintext.append(binascii.b2a_hex(urandom(16))) # insert randomly generated plaintext (in hexadecimal)
+#   # cipher_1 = (AES.new(orig_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex") ) # encrypt the plaintext with the key
+#   cipher_1 = XSalsa20_xor(plaintext[i].encode("hex"), IV, KEY_1)
+#   length = (len(cipher_1)) # returns the length of the cipher
+#   # cipher_2 = (AES.new(modified_key, AES.MODE_CFB, iv, segment_size=128).encrypt(plaintext[i]).encode("hex")) # encrypt the plaintext with the modified key
+#   cipher_2 = XSalsa20_xor(plaintext[i].encode("hex"), IV, KEY_2)
 #
-# 	distancia = (distance.hamming(cipher_1, cipher_2)) # calculate Hamming's distance
-# 	aval_effect = float(distancia) / length # calculate the avalance effect
-# 	worksheet.write(i+1, 0, distancia) # add the result of the distance to the excel sheet
-# 	worksheet.write(i+1, 1, aval_effect) # add the result of the avalanche effect to the excel sheet
+#   distancia = (distance.hamming(cipher_1, cipher_2)) # calculate Hamming's distance
+#   aval_effect = float(distancia) / length # calculate the avalance effect
+#   worksheet.write(i+1, 0, distancia) # add the result of the distance to the excel sheet
+#   worksheet.write(i+1, 1, aval_effect) # add the result of the avalanche effect to the excel sheet
 # workbook.close() # close excel file
 #
 #
