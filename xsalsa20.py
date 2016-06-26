@@ -16,13 +16,14 @@ workbook = xlsxwriter.Workbook('results.xlsx') # create new excel sheet
 worksheet = workbook.add_worksheet()
 worksheet.set_column('A:A', 20) # make column A wider
 worksheet.set_column('B:B', 20) # make column B wider
+worksheet.set_column('C:C', 20) # make column B wider
 worksheet.write(0, 0, "Distancia de Hamming") # title of column A
 worksheet.write(0, 1, "Efecto Avalancha") # title of column B
-worksheet.write(3, 5, "10000 iteraciones") # title of column B
+worksheet.write(3, 5, "10485 iteraciones") # title of column B
 
 plaintext = b'Mensaje a cifrar'
 # plaintext.append(binascii.b2a_hex(urandom(16))) # insert randomly generated plaintext (in hexadecimal)
-for i in range(0,10000):
+for i in range(0,10485):
   # plaintext.append(binascii.b2a_hex(urandom(256))) # insert randomly generated plaintext (in hexadecimal)
   # print(plaintext)
   cipher_1 = XSalsa20_xor(plaintext, IV, KEY_1)
