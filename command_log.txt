@@ -1,0 +1,1000 @@
+ 1064  git add .
+ 1065  git commit -m "bootstrap-sass reduced. Importing just what we use."
+ 1066  git checkout master
+ 1067  git branch checking-ngBlur
+ 1068  git checkout checking-ngBlur 
+ 1069  git pull origin master
+ 1070  git status
+ 1071  git diff src/components/tools/growthPlan/controllers/keyIndicators.coffee
+ 1072  git status
+ 1073  git diff src/components/tools/growthPlan/keyIndicators.jade
+ 1074  git status
+ 1075  git diff src/components/tools/valueProposition/controllers/customerPains.coffee
+ 1076  git status
+ 1077  git add .
+ 1078  git status
+ 1079  git reset HEAD src/components/tools/valueProposition/controllers/customerPains.coffee
+ 1080  git status
+ 1081  git checkout -- src/components/tools/valueProposition/controllers/customerPains.coffee
+ 1082  git status
+ 1083  git commit -m "goals with ngBlur and locateIndex function"
+ 1084  git status
+ 1085  git add .
+ 1086  git status
+ 1087  git reset HEAD .
+ 1088  git add src/demo/index.jade 
+ 1089  git status
+ 1090  git commit -m "analytics only in production"
+ 1091  git status
+ 1092  git diff src/components/tools/growthPlan/riskManagement.jade
+ 1093  git status
+ 1094  git add .
+ 1095  git commit -m "risks files with right indentation and deleteRisk working with locateIndex function"
+ 1096  git log --oneline
+ 1097  clear
+ 1098  git status
+ 1099  git add .
+ 1100  git commit -m "market-strategy with ngBlur"
+ 1101  git status
+ 1102  git diff src/components/tools/growthPlan/riskPriorization.jade
+ 1103  clear
+ 1104  git add .
+ 1105  git commit -m "riskPriorization indent"
+ 1106  git status
+ 1107  git diff src/components/tools/growthPlan/yearThree.jade
+ 1108  git status
+ 1109  git add .
+ 1110  git commit -m "yearThree with ngBlur"
+ 1111  git status
+ 1112  git diff src/components/tools/keyActivities/customerEngRetention.jade
+ 1113  git status
+ 1114  git add .
+ 1115  git commit -m "retentions with ngBLur"
+ 1116  git status
+ 1117  git diff src/components/tools/valueProposition/controllers/marketSize.coffee
+ 1118  git status
+ 1119  git add .
+ 1120  git commit -m "ngBlur in value-prop summary and indentation"
+ 1121  git status
+ 1122  git log --oneline
+ 1123  clear
+ 1124  git status
+ 1125  git pull origin master
+ 1126  git push -u origin checking-ngBlur 
+ 1127  git reflog
+ 1128  clear
+ 1129  git status
+ 1130  git pull origin master
+ 1131  git log --oneline
+ 1132  clear
+ 1133  git status
+ 1134  git add .
+ 1135  git status
+ 1136  git commit -m "goals in gp-summary aligned"
+ 1137  git pull origin master
+ 1138  git push
+ 1139  exit
+ 1140  cd BfB/we
+ 1141  cd BfB/web/
+ 1142  git status
+ 1143  git branch
+ 1144  git status
+ 1145  git log
+ 1146  git reflog
+ 1147  git reset --hard c5b6d30
+ 1148  exit
+ 1149  cd BfB/web/
+ 1150  vagrant up
+ 1151  git status
+ 1152  git pull
+ 1153  vagrant ssh
+ 1154  vagrant halt
+ 1155  vagrant up
+ 1156  vagrant ssh
+ 1157  vagrant halt
+ 1158  exit
+ 1159  cd app/
+ 1160  git status
+ 1161  broccoli server
+ 1162  broccoli serve
+ 1163  top -i
+ 1164  exit
+ 1165  top -i
+ 1166  exit
+ 1167  top -i
+ 1168  exit
+ 1169  top -i
+ 1170  exit
+ 1171  top -i
+ 1172  exit
+ 1173  cd BfB/web/
+ 1174  vagrant up
+ 1175  vagrant ssh
+ 1176  vagrant halt
+ 1177  vagrant up
+ 1178  vagrant ssh
+ 1179  vagrant halt
+ 1180  vagrant up
+ 1181  vagrant ssh
+ 1182  vagrant halt
+ 1183  exit
+ 1184  cd a
+ 1185  cd BfB/app/
+ 1186  git status
+ 1187  git checkout master
+ 1188  git branch
+ 1189  git checkout reduce-bootstrap 
+ 1190  git status
+ 1191  git log --oneline
+ 1192  git branch
+ 1193  git status
+ 1194  git checkout -- src/components/tools/valueProposition/controllers/customerSegments.coffee
+ 1195  git checkout -- src/components/tools/valueProposition/customerSegments.jade
+ 1196  git status
+ 1197  git pull origin master
+ 1198  git status
+ 1199  git add .
+ 1200  git commit -m "ui-angular-bootstrap reduced"
+ 1201  git status
+ 1202  git push -u origin reduce-bootstrap 
+ 1203  exit
+ 1204  cd app/
+ 1205  broccoli serve
+ 1206  top -i
+ 1207  cd BfB/web/
+ 1208  vagrant up
+ 1209  vagrant ssh
+ 1210  vagrant halt
+ 1211  exit
+ 1212  cd BfB/app/
+ 1213  git status
+ 1214  git pull origin master
+ 1215  git log --oneline
+ 1216  clear
+ 1217  git push
+ 1218  git status
+ 1219  git checkout master
+ 1220  git status
+ 1221  git branch new-design
+ 1222  git checkout new-design 
+ 1223  git pull origin master
+ 1224  git status
+ 1225  git checkout master
+ 1226  git status
+ 1227  git pull origin master
+ 1228  git status
+ 1229  exit
+ 1230  cd www/
+ 1231  git status
+ 1232  git add .
+ 1233  git commit -m "adding bootstrap cdn and new nav-bar links"
+ 1234  git status
+ 1235  git diff source/index.html.erb
+ 1236  git diff source/layouts/layout.erb
+ 1237  clear
+ 1238  git status
+ 1239  git add .
+ 1240  git status
+ 1241  git add .
+ 1242  git status
+ 1243  git commit -m "new files created and starting index.html"
+ 1244  git push -u origin new-home 
+ 1245  top -i
+ 1246  exit
+ 1247  cd BfB/www/
+ 1248  git status
+ 1249  git pull origin master
+ 1250  git status
+ 1251  clear
+ 1252  git status
+ 1253  clear
+ 1254  git status
+ 1255  git add source/layouts/layout.erb 
+ 1256  git add source/index.html.erb 
+ 1257  git status
+ 1258  git diff source/stylesheets/style.scss
+ 1259  git status
+ 1260  git add .
+ 1261  git commit -m "index template with carousel and partners"
+ 1262  git status
+ 1263  git diff source/stylesheets/_success-stories.scss
+ 1264  git checkout -- source/stylesheets/_success-stories.scss
+ 1265  git status
+ 1266  git add .
+ 1267  git status
+ 1268  git rm source/stylesheets/_wufoo.scss 
+ 1269  git status
+ 1270  git commit -m "positioning elements"
+ 1271  git push
+ 1272  exit
+ 1273  cd www/
+ 1274  middleman
+ 1275  cd www/
+ 1276  middleman build
+ 1277  middleman
+ 1278  cd BfB/www/
+ 1279  git status
+ 1280  git pull origin master
+ 1281  git status
+ 1282  git add .
+ 1283  git status
+ 1284  git rm build/javascripts/carousel.js 
+ 1285  git rm source/javascripts/carousel.js 
+ 1286  git status
+ 1287  git commit -m "nav-bar fixed everywhere but in index"
+ 1288  middleman build
+ 1289  git pull origin master
+ 1290  git status
+ 1291  git diff source/javascripts/all.js
+ 1292  git diff source/javascripts/main.js
+ 1293  git status
+ 1294  git diff source/stylesheets/_common.scss
+ 1295  git status
+ 1296  git diff source/stylesheets/_landing-page.scss
+ 1297  git status
+ 1298  git diff source/stylesheets/_nav-basics.scss
+ 1299  middleman build
+ 1300  middleman
+ 1301  clear
+ 1302  git status
+ 1303  git add .
+ 1304  git commit -m "index structure finished"
+ 1305  git
+ 1306  git status
+ 1307  middleman build
+ 1308  middleman
+ 1309  clear
+ 1310  middleman build
+ 1311  git status
+ 1312  git diff config.rb
+ 1313  git checkout -- config.rb
+ 1314  git status
+ 1315  git diff locales/en.yml
+ 1316  git diff locales/es.yml
+ 1317  git status
+ 1318  git diff source/index.html.erb
+ 1319  git status
+ 1320  git add .
+ 1321  git commit -m "added tranlation tags in index"
+ 1322  middleman
+ 1323  exit
+ 1324  curl https://api.stripe.com/v1/customers    -u sk_test_BQokikJOvBiI2HlWgH4olfQ2:    -d source=tok_18KPOq2eZvKYlo2CoaqaHshp    -d description="Benjamin Brown"    -d email="benjamin.brown.19@example.com"
+ 1325  curl https://api.stripe.com/v1/charges    -u sk_test_BQokikJOvBiI2HlWgH4olfQ2:    -d amount=2000    -d currency=usd    -d customer=cus_8bcfdefnRh5aI3
+ 1326  curl https://api.stripe.com/v1/plans    -u sk_test_BQokikJOvBiI2HlWgH4olfQ2:    -d amount=999    -d interval=month    -d name="Emerald Premium"    -d currency=usd    -d id=emerald-premium-582
+ 1327  curl https://api.stripe.com/v1/customers/cus_8bcfdefnRh5aI3/subscriptions    -u sk_test_BQokikJOvBiI2HlWgH4olfQ2:    -d plan=emerald-premium-582
+ 1328  exit
+ 1329  cd BfB/www/
+ 1330  git status
+ 1331  git log --oneline
+ 1332  middleman build
+ 1333  clear
+ 1334  middleman build
+ 1335  clear
+ 1336  git status
+ 1337  git checkout -- data/
+ 1338  git diff source/index.html.erb
+ 1339  clear
+ 1340  git status
+ 1341  git checkout -- source/index.html.erb
+ 1342  git diff source/localizable/index.html.erb
+ 1343  git status
+ 1344  clear
+ 1345  ps -u
+ 1346  top -i
+ 1347  exit
+ 1348  cd BfB/www/
+ 1349  middleman build
+ 1350  middleman
+ 1351  middleman build
+ 1352  middleman
+ 1353  middleman build
+ 1354  middleman
+ 1355  exit
+ 1356  cd BfB/web/
+ 1357  vagrant up
+ 1358  vagrant halt
+ 1359  exit
+ 1360  cd BfB/www/
+ 1361  git status
+ 1362  git add .
+ 1363  git status
+ 1364  git rm build/about-us 
+ 1365  git status
+ 1366  git rm source/success-stories.html.erb 
+ 1367  git rm source/project*
+ 1368  git sta
+ 1369  git status 
+ 1370  git rm source/about-us.html.erb 
+ 1371  git rm source/contact-us.html.erb 
+ 1372  git rm source/enterprise.html.erb 
+ 1373  git rm source/get-involved.html.erb 
+ 1374  git rm source/how-it-works.html.erb 
+ 1375  git rm source/join-us.html.erb 
+ 1376  git rm source/layouts/project.erb 
+ 1377  git rm source/price.html.erb 
+ 1378  git status
+ 1379  git rm build/success-stories.html 
+ 1380  git rm build/project*
+ 1381  git status
+ 1382  git rm build/success-stories 
+ 1383  git rm build/success-stories/
+ 1384  git rm -r build/success-stories
+ 1385  git status
+ 1386  git rm -r build/price 
+ 1387  git rm -r build/join-us 
+ 1388  git rm -r build/how-it-works 
+ 1389  git rm -r build/get-involved 
+ 1390  git rm -r build/enterprise 
+ 1391  git rm -r build/contact-us 
+ 1392  git status
+ 1393  git rm -r build/about-us 
+ 1394  git status
+ 1395  git commit -m "translations working in routes"
+ 1396  git status
+ 1397  git push
+ 1398  exit
+ 1399  cd www/
+ 1400  git status
+ 1401  middleman
+ 1402  clear
+ 1403  cd
+ 1404  cd web-local-tests/landing-site/
+ 1405  middleman init new_project
+ 1406  middleman
+ 1407  cd
+ 1408  cd BfB/www/
+ 1409  middleman
+ 1410  middleman build
+ 1411  middleman
+ 1412  cd ..
+ 1413  cd web-local-tests/
+ 1414  cd landing-site/
+ 1415  middleman
+ 1416  gem middleman-blog
+ 1417  gem "middleman-blog"
+ 1418  sudo gem "middleman-blog"
+ 1419  middleman init --template=blog
+ 1420  middleman init new_project --template=blog
+ 1421  middleman init new_project/ --template=blog
+ 1422  cd
+ 1423  cd BfB/www/
+ 1424  middleman
+ 1425  middleman build
+ 1426  middleman
+ 1427  middleman build
+ 1428  middleman
+ 1429  middleman build
+ 1430  middleman
+ 1431  middleman build
+ 1432  middleman
+ 1433  middleman build
+ 1434  middleman
+ 1435  middleman build
+ 1436  middleman
+ 1437  middleman build
+ 1438  middleman
+ 1439  middleman build
+ 1440  middleman
+ 1441  middleman build
+ 1442  middleman
+ 1443  middleman build
+ 1444  middleman
+ 1445  middleman build
+ 1446  middleman
+ 1447  middleman build
+ 1448  middleman
+ 1449  middleman build
+ 1450  middleman
+ 1451  middleman build
+ 1452  middleman
+ 1453  middleman build
+ 1454  middleman
+ 1455  middleman build
+ 1456  middleman
+ 1457  middleman build
+ 1458  middleman
+ 1459  middleman build
+ 1460  middleman
+ 1461  middleman build
+ 1462  middleman
+ 1463  middleman build
+ 1464  middleman
+ 1465  middleman build
+ 1466  middleman
+ 1467  middleman build
+ 1468  middleman
+ 1469  middleman build
+ 1470  middleman
+ 1471  middleman build
+ 1472  middleman
+ 1473  middleman build
+ 1474  middleman
+ 1475  middleman build
+ 1476  middleman
+ 1477  middleman build
+ 1478  middleman
+ 1479  middleman build
+ 1480  middleman
+ 1481  middleman build
+ 1482  middleman
+ 1483  middleman build
+ 1484  middleman
+ 1485  middleman build
+ 1486  middleman
+ 1487  middleman build
+ 1488  middleman
+ 1489  middleman build
+ 1490  middleman
+ 1491  cd BfB/www/
+ 1492  git status
+ 1493  git diff source/stylesheets/style.scss
+ 1494  git diff build/stylesheets/all.css
+ 1495  git status
+ 1496  git diff build/stylesheets/style.css
+ 1497  clear
+ 1498  git status
+ 1499  git add .
+ 1500  git status
+ 1501  git rm source/stylesheets/_about-projects.scss 
+ 1502  git rm source/stylesheets/_carousel.scss 
+ 1503  git status
+ 1504  git commit -m "unnecessary files deleted"
+ 1505  git pull origin master
+ 1506  git push
+ 1507  middleman build
+ 1508  middleman
+ 1509  middleman build
+ 1510  middleman
+ 1511  middleman build
+ 1512  middleman
+ 1513  middleman build
+ 1514  middleman
+ 1515  middleman build
+ 1516  middleman
+ 1517  git status
+ 1518  git diff build/index.html
+ 1519  middleman build
+ 1520  middleman
+ 1521  middleman build
+ 1522  middleman
+ 1523  git status
+ 1524  git diff config.rb
+ 1525  clear
+ 1526  git status
+ 1527  git diff source/stylesheets/_common.scss
+ 1528  middleman build
+ 1529  middleman
+ 1530  git status
+ 1531  git add .
+ 1532  git status
+ 1533  history
+ 1534  git status
+ 1535  git rm source/index.html.erb 
+ 1536  git status
+ 1537  git commit -m "redirect to english by default"
+ 1538  middleman build
+ 1539  middleman
+ 1540  clear
+ 1541  middleman build
+ 1542  middleman
+ 1543  git status
+ 1544  git add .
+ 1545  git commit -m "buttons in _common.scss"
+ 1546  git push
+ 1547  middleman build
+ 1548  middleman
+ 1549  git status
+ 1550  git add .
+ 1551  git status
+ 1552  middleman build
+ 1553  middleman
+ 1554  middleman build
+ 1555  middleman
+ 1556  exit
+ 1557  cd BfB/www/
+ 1558  git status
+ 1559  git diff source/localizable/index.html.erb
+ 1560  git status
+ 1561  git add .
+ 1562  git status
+ 1563  git add .
+ 1564  git commit -m "reducing duplicated buttons css"
+ 1565  git status
+ 1566  git add .
+ 1567  git commit -m "set opacity in background images"
+ 1568  git status
+ 1569  git diff locales/en.yml
+ 1570  git diff source/localizable/index.html.erb
+ 1571  git checkout -- source/localizable/index.html.erb
+ 1572  git status
+ 1573  git diff source/stylesheets/_common.scss
+ 1574  clear
+ 1575  git status
+ 1576  git add .
+ 1577  exit
+ 1578  cd www/
+ 1579  middleman build
+ 1580  middleman
+ 1581  top -i
+ 1582  exit
+ 1583  cd BfB/www/
+ 1584  git status
+ 1585  middleman
+ 1586  middleman build
+ 1587  middleman
+ 1588  middleman build
+ 1589  middleman
+ 1590  middleman build
+ 1591  middleman
+ 1592  exit
+ 1593  cd BfB/ww
+ 1594  cd BfB/www/
+ 1595  git status
+ 1596  clear
+ 1597  git status
+ 1598  git add .
+ 1599  git commit -m "just bootstrap - no custom css yet"
+ 1600  exit
+ 1601  cd BfB/www/
+ 1602  middleman
+ 1603  middleman build
+ 1604  middleman
+ 1605  exit
+ 1606  cd BfB/web/
+ 1607  vagrant up
+ 1608  vagrant ssh
+ 1609  vagrant halt
+ 1610  exit
+ 1611  cd BfB/www/
+ 1612  middleman
+ 1613  cd 
+ 1614  cd BfB/app/
+ 1615  git status
+ 1616  git branch
+ 1617  git branch testing-competitors
+ 1618  git checkout testing-competitors 
+ 1619  git pull origin master
+ 1620  git status
+ 1621  git checkout src/components/tools/stakeholderMap/controllers/partnershipIdentification.coffee
+ 1622  git status
+ 1623  git pull origin master
+ 1624  git status
+ 1625  broccoli serve
+ 1626  clear
+ 1627  cd
+ 1628  cd BfB/www/
+ 1629  middleman build
+ 1630  middleman
+ 1631  exit
+ 1632  cd BfB/www/
+ 1633  git status
+ 1634  git diff source/stylesheets/_landing-page.scss
+ 1635  git diff source/localizable/index.html.erb
+ 1636  clear
+ 1637  git status
+ 1638  git diff source/localizable/index.html.erb
+ 1639  git status
+ 1640  git add .
+ 1641  git commit -m "margins added with container"
+ 1642  git push
+ 1643  exit
+ 1644  cd BfB/www/
+ 1645  git status
+ 1646  git add .
+ 1647  git status
+ 1648  git rm source/stylesheets/_nav-basics.scss 
+ 1649  git status
+ 1650  git commit -m "carousel added"
+ 1651  git status
+ 1652  git diff source/layouts/layout.erb
+ 1653  git add .
+ 1654  git commit -m "bootstrap index template"
+ 1655  middleman build
+ 1656  middleman
+ 1657  exit
+ 1658  top -i
+ 1659  exit
+ 1660  cd BfB/web/
+ 1661  vagrant up
+ 1662  vagrant ssh
+ 1663  vagrant halt
+ 1664  exit
+ 1665  cd BfB/app/
+ 1666  git status
+ 1667  git branch
+ 1668  git branch duplicate-key-act-fix
+ 1669  git checkout master
+ 1670  git checkout duplicate-key-act-fix 
+ 1671  git pull origin master
+ 1672  git status
+ 1673  git add .
+ 1674  git commit -m "lint indentation fixed - pushed to actually see changes in future commits"
+ 1675  git status
+ 1676  git diff package.json
+ 1677  git checkout -- package.json
+ 1678  git status
+ 1679  git diff src/components/tools/keyActivities/controllers/keyActivities.coffee
+ 1680  clear
+ 1681  git status
+ 1682  git diff src/components/tools/keyActivities/keyActivities.jade
+ 1683  git diff src/components/tools/keyActivities/controllers/keyActivities.coffee
+ 1684  git add .
+ 1685  git commit -m "other_act were not being created. Also testing debounce and blur together only there"
+ 1686  git status
+ 1687  git push - u origin duplicate-key-act-fix 
+ 1688  git push -u origin duplicate-key-act-fix 
+ 1689  git status
+ 1690  git pull origin master
+ 1691  cd ../www/
+ 1692  git status
+ 1693  middleman
+ 1694  middleman build
+ 1695  middleman
+ 1696  middleman build
+ 1697  middleman
+ 1698  middleman build
+ 1699  middleman
+ 1700  middleman build
+ 1701  middleman
+ 1702  middleman build
+ 1703  middleman
+ 1704  exit
+ 1705  cd app/
+ 1706  broccoli serve
+ 1707  clear
+ 1708  cd ..
+ 1709  cd www/
+ 1710  git status
+ 1711  git log --oneline
+ 1712  git status
+ 1713  git add .
+ 1714  git commit -m "missing check icons"
+ 1715  git branch how-it-works-entrepreneur
+ 1716  git checkout how-it-works-entrepreneur 
+ 1717  git pull origin new-home 
+ 1718  git status
+ 1719  git add .
+ 1720  git status
+ 1721  git rm build/en/join-us.html 
+ 1722  git rm build/es/join-us.html 
+ 1723  git rm source/localizable/join-us.html.erb 
+ 1724  git rm source/stylesheets/_join-us.scss 
+ 1725  git status
+ 1726  git commit -m "hot-it-works basis and singUp link added. JoinUs template not needed"
+ 1727  git status
+ 1728  git add .
+ 1729  git commit -m "how-it-works template"
+ 1730  git status
+ 1731  git add .
+ 1732  git commit -m "how it works changing texts from entrep to mentor"
+ 1733  git status
+ 1734  git push -u origin how-it-works-entrepreneur 
+ 1735  git status
+ 1736  git diff source/stylesheets/_how-it-work.scss
+ 1737  clear
+ 1738  git status
+ 1739  git add .
+ 1740  git commit -m "jumbotron background moved to common and how-it-work header align as role"
+ 1741  git push
+ 1742  cd app/
+ 1743  broccoli serve
+ 1744  cd BfB/app/
+ 1745  git status
+ 1746  git pull
+ 1747  clear
+ 1748  broccoli serve
+ 1749  exit
+ 1750  cd BfB/app/
+ 1751  git pull origin master
+ 1752  git status
+ 1753  git checkout master
+ 1754  top -i
+ 1755  clear
+ 1756  git pull
+ 1757  git status
+ 1758  git branch
+ 1759  git branch op-expenses-fix
+ 1760  git checkout op-expenses-fix 
+ 1761  git pull origin master
+ 1762  git status
+ 1763  git diff src/components/tools/financialProjections/controllers/operationalExpenses.coffee
+ 1764  git diff src/components/tools/financialProjections/operationalExpenses.jade
+ 1765  git status
+ 1766  git add .
+ 1767  git commit -m "user is forced to select an expense before giving values"
+ 1768  git pull origin master
+ 1769  git push -u origin op-expenses-fix 
+ 1770  exit
+ 1771  cd BfB/app/
+ 1772  git status
+ 1773  git push -u origin op-expenses-fix 
+ 1774  exit
+ 1775  cd BfB/www/
+ 1776  middleman build
+ 1777  middleman
+ 1778  cd
+ 1779  cd BfB/app/
+ 1780  cd ..
+ 1781  cd web/
+ 1782  vagrant up
+ 1783  vagrant ssh
+ 1784  vagrant halt
+ 1785  exit
+ 1786  cd BfB/
+ 1787  cd www/
+ 1788  middleman
+ 1789  cd
+ 1790  cd BfB/app/
+ 1791  broccoli serve
+ 1792  exit
+ 1793  cd BfB/web/
+ 1794  vagrant up
+ 1795  vagrant ssh
+ 1796  vagrant halt
+ 1797  exit
+ 1798  cd BfB/www/
+ 1799  git status
+ 1800  git add .
+ 1801  git commit -m "english build in root to improve SEO"
+ 1802  git status
+ 1803  git rm build/en/about-us.html
+ 1804  git rm build/en/enterprise.html
+ 1805  git rm build/en/how-it-works.html
+ 1806  git rm build/en/index.html
+ 1807  git rm build/en/price.html
+ 1808  git rm build/en/success-stories.html
+ 1809  git status
+ 1810  git add .
+ 1811  git commit -m "deleted unused build files"
+ 1812  git status
+ 1813  git branch
+ 1814  git checkout new-home 
+ 1815  git pull origin how-it-works-entrepreneur 
+ 1816  git checkout how-it-works-entrepreneur 
+ 1817  git status
+ 1818  git push
+ 1819  git checkout new-home 
+ 1820  git status
+ 1821  git pull origin how-it-works-entrepreneur 
+ 1822  git status
+ 1823  git add .
+ 1824  git commit -m "index rows fixed and pictures positioned in mobile and desktop version"
+ 1825  git add .
+ 1826  git status
+ 1827  git commit -m "language selection in dropdown menu"
+ 1828  git push
+ 1829  git checkout how-it-works-entrepreneur 
+ 1830  git pull origin new-home 
+ 1831  git status
+ 1832  git diff source/layouts/layout.erb
+ 1833  clear
+ 1834  git status
+ 1835  git add .
+ 1836  git status
+ 1837  git rm source/stylesheets/_how-it-work.scss
+ 1838  git status
+ 1839  git commit -m "divs aligned"
+ 1840  exit
+ 1841  cd app/
+ 1842  bower install
+ 1843  npm install -g bower
+ 1844  sudo npm install -g bower
+ 1845  bower install
+ 1846  sudo bower install
+ 1847  sudo npm install
+ 1848  bower install
+ 1849  sudo bower install
+ 1850  bower install
+ 1851  npm install
+ 1852  sudo npm install
+ 1853  bower install
+ 1854  sudo bower install --allow-root
+ 1855  git status
+ 1856  git branch
+ 1857  clear
+ 1858  cd
+ 1859  cd BfB/www/
+ 1860  clear
+ 1861  middleman
+ 1862  middleman build
+ 1863  middleman
+ 1864  middleman build
+ 1865  middleman
+ 1866  middleman build
+ 1867  middleman
+ 1868  cd BfB/app/
+ 1869  git status
+ 1870  cd ..
+ 1871  cd www/
+ 1872  git status
+ 1873  git log --oneline
+ 1874  clear
+ 1875  git status
+ 1876  git add .
+ 1877  git commit -m "white margin deleted"
+ 1878  git status
+ 1879  git push
+ 1880  git checkout new-home 
+ 1881  git status
+ 1882  git pull origin how-it-works-entrepreneur 
+ 1883  git status
+ 1884  git log --oneline
+ 1885  clear
+ 1886  git status
+ 1887  git add .
+ 1888  git status
+ 1889  git rm source/localizable/enterprise.html.erb 
+ 1890  git rm source/localizable/price.html.erb 
+ 1891  git rm source/localizable/success-stories.html.erb 
+ 1892  git rm source/stylesheets/_success-stories.scss 
+ 1893  git status
+ 1894  git commit -m "files renamed"
+ 1895  git status
+ 1896  git add .
+ 1897  git status
+ 1898  git rm build/enterprise.html 
+ 1899  git rm build/price.html 
+ 1900  git rm build/success-stories.html 
+ 1901  git rm build/es/enterprise.html 
+ 1902  git rm build/es/price.html 
+ 1903  git rm build/es/success-stories.html 
+ 1904  git status
+ 1905  git add .
+ 1906  git commit -m "navbar fixed according to design"
+ 1907  git status
+ 1908  git add .
+ 1909  git commit -m "changed data.url and css for nav in different views"
+ 1910  git status
+ 1911  git add .
+ 1912  git commit -m "our-impact template done"
+ 1913  git status
+ 1914  git add .
+ 1915  git commit -m "our-impact changing stories. Not responsive yet"
+ 1916  git status
+ 1917  git add .
+ 1918  git commit -m "organizations template"
+ 1919  git push
+ 1920  exit
+ 1921  cd www/
+ 1922  middleman build
+ 1923  middleman
+ 1924  middleman build
+ 1925  middleman
+ 1926  middleman build
+ 1927  middleman
+ 1928  cd js-nacl/
+ 1929  ls
+ 1930  emcc -v
+ 1931  emcc hello_world.c 
+ 1932  ls
+ 1933  node a.out.js
+ 1934  emcc hello_world.c -o hello.html
+ 1935  ls
+ 1936  node test.js 
+ 1937  ls -la
+ 1938  ls -l
+ 1939  ls -a
+ 1940  clear
+ 1941  ls
+ 1942  mkdir STI
+ 1943  cd STI/
+ 1944  wget https://hyperelliptic.org/nacl/nacl-20110221.tar.bz2
+ 1945  bunzip2 < nacl-20110221.tar.bz2 | tar -xf -
+ 1946  ls
+ 1947  cd nacl-20110221/
+ 1948  ./do
+ 1949  cd
+ 1950  cd STI/js-nacl/
+ 1951  npm install js-nacl
+ 1952  sudo npm install js-nacl
+ 1953  node -v
+ 1954  emcc -v
+ 1955  sudo apt-get install emscripten
+ 1956  emcc -v
+ 1957  cd ..
+ 1958  libsodium -v
+ 1959  ls
+ 1960  mkdir libsodium
+ 1961  cd libsodium/
+ 1962  bre install libsodium
+ 1963  brew install libsodium
+ 1964  libsodium
+ 1965  exit
+ 1966  top -i
+ 1967  pwd
+ 1968  cd STI/
+ 1969  pwd
+ 1970  ls
+ 1971  cd nacl-20110221/
+ 1972  ls
+ 1973  cd crypto_stream/
+ 1974  ls
+ 1975  cd xsalsa20/
+ 1976  ls
+ 1977  cd ref/
+ 1978  ls
+ 1979  cat stream.c 
+ 1980  clear
+ 1981  pwd
+ 1982  cd
+ 1983  cd STI/
+ 1984  cd
+ 1985  cd ..
+ 1986  pwd
+ 1987  ls
+ 1988  cd
+ 1989  ls
+ 1990  cd STI/nacl-20110221/
+ 1991  ls
+ 1992  cd build/
+ 1993  ls
+ 1994  cd nato522PC/
+ 1995  ls
+ 1996  cd
+ 1997  cd STI/js-nacl/
+ 1998  node test.js 
+ 1999  exit
+ 2000  python --version
+ 2001  ls
+ 2002  cd STI/
+ 2003  ls
+ 2004  mkdir pyxsalsa20
+ 2005  cd pyxsalsa20/
+ 2006  python --version
+ 2007  py
+ 2008  python
+ 2009  git clone https://github.com/nato522/xsalsa20-cipher.git
+ 2010  ls
+ 2011  cd ..
+ 2012  ls
+ 2013  git clone https://github.com/nato522/xsalsa20-cipher.git
+ 2014  ls
+ 2015  git status
+ 2016  cd xsalsa20-cipher/
+ 2017  git status
+ 2018  ls
+ 2019  python xsalsa20.py 
+ 2020  pip install salsa20
+ 2021  sudo apt-get install python-pip
+ 2022  pip install salsa20
+ 2023  cd python-salsa20-master/
+ 2024  pip install salsa20
+ 2025  cd ..
+ 2026  cd
+ 2027  cd STI/xsalsa20-cipher/
+ 2028  ls
+ 2029  sudo apt-get install python3-dev
+ 2030  pip install salsa20
+ 2031  sudo apt-get install python-dev
+ 2032  pip install salsa20
+ 2033  sudo pip install salsa20
+ 2034  python
+ 2035  python xsalsa20.py 
+ 2036  python setup.py install
+ 2037  cd distance/
+ 2038  python setup.py install
+ 2039  sudo python setup.py install
+ 2040  cd ..
+ 2041  python xsalsa20.py 
+ 2042  git status
+ 2043  cd XlsxWriter-master/
+ 2044  sudo python setup.py install
+ 2045  cd ..
+ 2046  python xsalsa20.py 
+ 2047  git status
+ 2048  git add .
+ 2049  git commit -m "adding libs to calculate hamming distance and export to excel format"
+ 2050  git status
+ 2051  git push
+ 2052  python xsalsa20.py 
+ 2053  git status
+ 2054  git add .
+ 2055  git commit -m "first excel created. Not valid."
+ 2056  python xsalsa20.py 
+ 2057  git status
+ 2058  git diff xsalsa20.py
+ 2059  python xsalsa20.py 
+ 2060  history > command_log.txt
+ 2061  git status
+ 2062  history >> command_log.txt
+ 2063  history > command_log.txt
