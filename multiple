@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python xsalsa20.py && python xsalsa20_cipher_2.py && python xsalsa20_cipher_3.py && python xsalsa20_cipher_4.py
