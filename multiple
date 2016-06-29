@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-python xsalsa20.py &
-python xsalsa20_2.py &
-python xsalsa20_3.py

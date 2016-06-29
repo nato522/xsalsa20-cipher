@@ -1,0 +1,21 @@
+Descripción del código
+paquetes utilizados: distance, itertools, salsa20, urandom
+
+https://pypi.python.org/pypi/salsa20/0.3.0
+https://pypi.python.org/pypi/Distance/0.1.3
+
+Vectores de pruebas
+Para probar el funcionamiento correcto del código se ha recurrido a vectores de prueba encontrados en la página oficial del Ecrypt.
+
+http://bit.ly/29bhszX
+
+
+Argumentos de prueba:
+
+consideramos 2 casos. Cambio de un bit en texto plano y cambio de 1 bit en clave. El valor inicial será un valor aleatorio en todos los casos.
+
+Tamaño de la muestra:
+bucle de 10000 iteraciones
+primero distintas claves
+segundo distintos textos
+para ambos casos se calcula la distacia de hamming y su efecto Avalancha
